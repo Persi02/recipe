@@ -1,0 +1,20 @@
+.input_ladin {
+    border-radius: 30px;
+    border: 2px solid var(--primary);
+    padding: 10px 20px;
+}
+
+.input_ladin {
+    outline: none;
+}
+
+.input_none {
+    border: none;
+    border-radius: unset;
+
+    &::placeholder {
+        color: var(--primary);
+        font-weight: 600;
+        font-size: 14px;
+    }
+}

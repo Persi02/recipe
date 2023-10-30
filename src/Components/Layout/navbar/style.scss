@@ -1,0 +1,75 @@
+@mixin grid($col) {
+    display: grid;
+    grid-template-columns: repeat($col , auto);
+}
+
+
+
+.navbar {
+    @apply w-full flex justify-between items-center px-12;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.wrap_logo {
+    @apply flex items-center gap-6;
+
+    .icon_menu {
+        cursor: pointer;
+        display: none;
+    }
+}
+
+.nav {
+    @apply flex gap-5 text-base;
+    font-weight: 600;
+
+    .nav_link {
+        display: inline-flex;
+        gap: 10px
+    }
+
+    .nav_link:hover {
+        color: var(--primary)
+    }
+
+}
+
+.menu_nav {
+    display: flex;
+    @apply items-center;
+    gap: 10px;
+
+    .wrap_profil {
+        width: 45px;
+        height: 45px;
+
+        img {
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+        }
+    }
+
+    input {
+        max-width: 180px;
+    }
+
+    svg,
+    img {
+        cursor: pointer;
+        border-radius: 50px;
+
+    }
+
+    svg:hover,
+    img:hover,
+    .btn_sing:hover {
+        transform: scale(1.1);
+    }
+
+    svg:hover,
+    img:hover {
+        background: #d9d9d9;
+    }
+}

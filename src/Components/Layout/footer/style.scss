@@ -1,0 +1,68 @@
+footer {
+    background-color: #E9E5E5;
+
+    h4,
+    a {
+        font-weight: 600;
+    }
+
+}
+
+.wrap_footer {
+    padding: 100px 100px 30px 100px;
+    display: grid;
+    grid-template-columns: repeat(12, auto);
+
+    h4 {
+        margin-bottom: 20px;
+    }
+}
+
+.box_rsociaux h4 {
+    margin-left: 15%;
+}
+
+.contact_footer {
+    display: grid;
+    grid-template-rows: repeat(2, auto);
+    gap: 74px;
+    grid-column: span 4;
+
+
+}
+
+.card_rsociaux {
+    display: flex;
+    gap: 40px;
+
+
+}
+
+.newsletter_footer {
+
+
+    input,
+    button {
+        display: block;
+        margin-bottom: 20px;
+    }
+
+}
+
+.menus_footer {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-column: 7 /span 5;
+
+    .menu_footer:hover {
+        color: var(--primary);
+        transform: scale(1.02);
+    }
+}
+
+.logo_footer {
+    grid-column: span 12;
+    grid-row: 2;
+    @apply flex justify-center items-center;
+}

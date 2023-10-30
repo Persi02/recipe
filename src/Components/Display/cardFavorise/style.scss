@@ -1,0 +1,27 @@
+.card_favorise {
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    overflow: hidden;
+    display: inline-flex;
+    flex-direction: column;
+    gap: 20px;
+
+
+    figure {
+        height: 232px;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+            height: 100%;
+        }
+    }
+}
+
+.card_stars {
+    @apply flex gap-2;
+}
+
+.body_card_favorise>* {
+    margin-bottom: 10px;
+}

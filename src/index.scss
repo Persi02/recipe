@@ -1,0 +1,17 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary: #F27830;
+  --green: #3CCF17;
+}
+
+* {
+  font-family: 'Work Sans', sans-serif;
+  box-sizing: border-box
+}
+
+.wrap {
+  @apply w-full px-28;
+}

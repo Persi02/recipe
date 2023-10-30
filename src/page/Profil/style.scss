@@ -1,0 +1,86 @@
+.couverture {
+    @apply text-center p-4;
+}
+
+.card_profil {
+    @apply flex justify-center items-center;
+    flex-direction: column;
+
+    h3 {
+        font-size: 40px
+    }
+
+    .name_user {
+        @apply mt-4 mb-4 text-4xl;
+        font-weight: 400;
+    }
+
+    .wrap_profil {
+        @apply pb-4;
+        position: relative;
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+
+
+    }
+
+    .card_edit {
+        @apply pt-16 px-2 pb-6;
+        position: fixed;
+        left: 50%;
+        top: 50vh;
+        transform: translate(-50%, -50%);
+        background-color: white;
+
+        button {
+            @apply mt-3;
+            background-color: blue;
+        }
+
+        .cancel {
+            position: absolute;
+            height: 30px;
+            width: 30px;
+            right: 10px;
+            top: 10px;
+            border-radius: 50%;
+            background-color: rgb(226, 226, 37);
+        }
+
+
+        .wrap_edit {
+            height: 300px;
+            width: 500px;
+            cursor: pointer;
+            border: 2px dashed #1475cf;
+            @apply flex items-center justify-center;
+
+            input {
+                @apply flex items-center justify-center;
+            }
+        }
+    }
+
+    .edit_profil {
+        position: absolute;
+        height: 40px;
+        width: 40px;
+        right: 20px;
+        bottom: 15px;
+        border-radius: 50%;
+        background-color: green;
+    }
+
+    .photo_profil {
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+
+    .title_edit {
+        @apply text-2xl;
+        font-weight: bold;
+    }
+}

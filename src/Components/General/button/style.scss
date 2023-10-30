@@ -1,0 +1,18 @@
+.btn {
+    display: inline-flex;
+    border-radius: 30px;
+    align-items: center;
+}
+
+.btn_sing {
+    @apply text-sm;
+    font-weight: 600;
+    padding: 10px 20px;
+    color: var(--primary);
+}
+
+.btn--orange {
+    background-color: var(--primary);
+    @apply text-white;
+
+}

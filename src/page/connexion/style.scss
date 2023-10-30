@@ -1,0 +1,58 @@
+.wrap_connexion {
+    padding: 77px 141px;
+    height: calc(100vh - 120px);
+    display: flex;
+
+    article,
+    .wrap_forme_login {
+        width: 50%;
+    }
+
+    .wrap_forme_login {
+        @apply flex gap-5 items-center justify-center;
+        padding: 0 5%;
+        flex-direction: column;
+    }
+
+    .btn_google {
+        @apply flex items-center justify-center gap-5 py-2 w-full rounded-full;
+        text-decoration: none;
+        outline: 1px solid rgba(0, 0, 0, 0.50);
+        cursor: pointer;
+    }
+
+    form {
+        @apply w-full px-2;
+
+        .forgot {
+            text-align: end;
+
+            p {
+                margin-bottom: 20px
+            }
+
+        }
+    }
+
+
+    .btn--lg {
+        @apply px-12;
+        margin-left: 50%;
+        transform: translateX(-50%);
+        margin-bottom: 20px;
+    }
+
+    [type='submit'] {
+        background-color: var(--primary);
+    }
+
+    .text_singup {
+        @apply flex gap-1 justify-center items-center;
+
+        a {
+            cursor: pointer;
+            color: #3CCF17;
+            font-size: 12px;
+        }
+    }
+}

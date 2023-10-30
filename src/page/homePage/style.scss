@@ -1,0 +1,151 @@
+@import '@splidejs/splide/css';
+
+.section_hero {
+    padding: 77px 0 116px 0;
+}
+
+.section_favorise {
+
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+}
+
+.card_favorise_product {
+    grid-column: span 5;
+
+    h2 {
+        margin-bottom: 10px;
+    }
+}
+
+.favorise_product {
+
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 50px;
+    margin-bottom: 64px;
+}
+
+.wrap_menu_favorise {
+    padding-bottom: 64px;
+}
+
+.favorise_menu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    position: sticky;
+    top: 0;
+
+    a:hover {
+        color: var(--primary);
+    }
+
+}
+
+.wrap_popular {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.popular_category {
+    padding-bottom: 64px;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+}
+
+.get_recipe {
+    @apply flex items-center justify-between;
+    background-color: #E9E5E5;
+}
+
+.card_get {
+    display: inline-flex;
+    flex-direction: column;
+    gap: 40px;
+
+    input {
+        margin-right: 10px;
+    }
+
+    p {
+        max-width: 500px;
+    }
+}
+
+.card_recipe {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.wrap_collection {
+
+    padding: 97px 20%;
+
+    h2 {
+        margin-bottom: 20px;
+    }
+
+    .collection {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+}
+
+.latest_recipe {
+    @apply flex items-center py-12;
+    flex-direction: column;
+    gap: 20px;
+
+}
+
+.carosel {
+    @apply flex justify-center;
+    width: 100%;
+
+    .splide__slide {
+        @apply flex justify-center;
+
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .splide__pagination {
+        bottom: -1.5em;
+    }
+
+    .splide__pagination__page.is-active {
+        background: var(--primary);
+    }
+
+    button,
+    [type='button'] {
+        background-color: #D9D9D9;
+    }
+
+}
+
+.splide {
+    width: 90%;
+
+    .splide__arrow--prev {
+        left: -3rem;
+    }
+
+    .splide__arrow--next {
+        right: -3rem;
+    }
+
+
+}
+
+.splide:not(.is-overflow) .splide__pagination {
+    display: flex;
+}
