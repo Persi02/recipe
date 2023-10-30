@@ -23,11 +23,7 @@ function Profil({ setIsLayout, isLayout, setImage, image }: IisLayout) {
     const [isHide, setIsHide] = useState<boolean>(false)
     const [update, setUpdate] = useState<boolean>(false)
     const username = localStorage.getItem('username');
-    useEffect(() => {
-        if (localStorage.getItem('avatar')) {
 
-        }
-    })
 
     useEffect(() => {
         if (!isLayout) {

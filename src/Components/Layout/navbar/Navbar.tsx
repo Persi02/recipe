@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+
 import './style.scss'
 
 import MenuIcon from '../../icons/MenuIcon';
@@ -20,8 +20,8 @@ interface IisLogged { isLogged: boolean, image: string, setImage: React.Dispatch
 
 function Navbar({ isLogged, image, setImage }: IisLogged) {
 
-    const [isProfil, setIsProfil] = useState<boolean>(true)
     const navigate = useNavigate();
+
 
     const logOut: React.MouseEventHandler<HTMLButtonElement> = () => {
         localStorage.clear();
@@ -30,11 +30,9 @@ function Navbar({ isLogged, image, setImage }: IisLogged) {
 
     const items: Iitems[] = [{ label: "Home", link: "/" }, { label: "Recipe", link: "/recipe" }, { label: "Meal Planners", link: "/mealplanners" }, { label: "Courses", link: "/courses" }, { label: "About us", link: "/about" }, { label: "Contact", link: "/contact" }
     ]
-    useEffect(() => {
-        if (localStorage.getItem('avatar')) {
-            console.log(localStorage.getItem('avatar'));
-        }
-    }, [])
+
+
+
 
     return (
         <header className='navbar'>

@@ -17,10 +17,6 @@ interface IisLayout {
     setIsLayout: React.Dispatch<React.SetStateAction<boolean>>,
     isLayout: boolean
 }
-interface IisImage {
-    setImage: React.Dispatch<React.SetStateAction<string>>,
-
-}
 interface Iuser {
 
     email?: string,
@@ -68,7 +64,12 @@ function Connexion({ setIsLayout, isLayout }: IisLayout) {
                     localStorage.setItem('username', res.data.user.username);
                     localStorage.setItem('email', res.data.user.email);
                     localStorage.setItem('userId', res.data.user._id);
-                    localStorage.setItem('avatar', res.data.user.avatar);
+
+                    // localStorage.setItem('avatar', res.data.user.avatar.nameHashed);
+
+
+
+
                     toast.success("Bienvenue")
                     navigate('/')
                 } else {

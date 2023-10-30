@@ -22,10 +22,12 @@ import CollectionItem from '../../Components/Display/cardCollection/CollectionIt
 
 interface IisLayout {
     setIsLayout: React.Dispatch<React.SetStateAction<boolean>>,
-    isLayout: boolean
+    isLayout: boolean,
+    setImage: React.Dispatch<React.SetStateAction<string>>,
+    image: string
 }
 
-function Home({ setIsLayout, isLayout }: IisLayout) {
+function Home({ setIsLayout, isLayout, setImage, image }: IisLayout) {
     useEffect(() => {
         if (!isLayout) {
             setIsLayout(true)
@@ -145,6 +147,12 @@ function Home({ setIsLayout, isLayout }: IisLayout) {
         ,
         { link: Beur, title: "Dinner" }
     ]
+    // useEffect(() => {
+    //     if (localStorage.getItem('avatar')) {
+    //         setImage(JSON.stringify(localStorage.getItem('avatar')))
+
+    //     }
+    // })
 
 
     return (

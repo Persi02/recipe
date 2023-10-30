@@ -6,11 +6,7 @@ interface Idata {
     password?: string
 
 }
-interface IdataProfile {
-    file?: File,
-    useId?: string
 
-}
 
 class UserService extends Http {
     static async getUser(url: string) {

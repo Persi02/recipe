@@ -30,7 +30,7 @@ function Layout() {
             <Routes>
 
                 <Route path="/"
-                    element={<Home setIsLayout={setIsLayout} isLayout={isLayout} />} />
+                    element={<Home setIsLayout={setIsLayout} isLayout={isLayout} setImage={setImage} image={image} />} />
                 <Route path="/about"
                     element={<About setIsLayout={setIsLayout} isLayout={isLayout} />} />
                 <Route path="/profil"
